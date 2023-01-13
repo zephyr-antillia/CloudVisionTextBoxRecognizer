@@ -37,22 +37,25 @@ Please run the following command in <b>Cloud Tools for PowerShell</b> console.<b
 This CloudVisionTextBoxRecognizer.py script reads the recognition.conf file.<br>
 <pre>
 [parameter]
-images_dir = "./samples"
-output_dir = "./outputs"
-image_format= ".png"
-
+images_dir   = "./samples"
+;output_dir   = "./outputs"
+output_dir   = "./non_preprocessed"
+image_format = ".png"
 language_hints   = ["ja"]
 
 [preprocessor]
-preprocessing    = True
+;preprocessing    = True
+preprocessing    = False
 gray_image       = True
 image_scaling    = 3
-constrast        = 2
+contrast         = 1.5
 sharpness        = 3
 
 [visualizer]
 font_name        = "BIZ-UDMinchoM.ttc"
-
+draw_boundingbox = True
+expanding_ratio  = 1.0
+scaling_on_nonpreprocessing = 3
 </pre>
 
 Please note that we specify the language_hints in this config file to be ["ja"] to recognize Japanese text.<br>
