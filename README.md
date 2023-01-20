@@ -178,7 +178,7 @@ Text Box Recognition:<br>
 4 Recoginition Test for Japanese Characters Set
 </h2>
 Let's try to recognize Japanese Character Set.<br>
-See <a href= "./ひらがなカタカナ数字記号常用漢字.txt">ひらがなカタカナ数字記号常用漢字.txt"></a>.<br>
+See <a href= "./ひらがなカタカナ数字記号常用漢字.txt">ひらがなカタカナ数字記号常用漢字.txt"</a>.<br>
 </a>.<br>
 
 <pre>
