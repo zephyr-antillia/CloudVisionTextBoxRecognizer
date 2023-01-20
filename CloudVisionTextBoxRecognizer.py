@@ -132,7 +132,9 @@ if __name__ == "__main__":
   
   try:
     config_file = "./recognition.conf"
- 
+    if len(sys.argv) == 2:
+      config_file = sys.argv[1]
+    print("--- config_file {}".format(config_file)) 
     start_time = time.time()
 
     recognizer = CloudVisionTextBoxRecongizer(config_file)

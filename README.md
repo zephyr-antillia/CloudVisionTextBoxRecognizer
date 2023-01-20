@@ -173,3 +173,75 @@ Text Box Recognition:<br>
      width="1280" height="auto">
 <br>
 
+
+<h2>
+4 Recoginition Test for Japanese Characters Set
+</h2>
+Let's try to recognize Japanese Character Set.<br>
+See "./ひらがなカタカナ数字記号常用漢字.txt".<br>
+
+> python CloudVisionTextBoxRecognizer.py test_recognition.conf
+
+<br>
+, where test_recongin.conf is the following.
+<pre>
+[parameter]
+images_dir   = "./test"
+output_dir   = "./test_preprocessed"
+image_format = ".png"
+language_hints   = ["ja"]
+
+[preprocessor]
+preprocessing    = True
+gray_image       = True
+image_scaling    = 3
+contrast         = 1.5
+sharpness        = 3
+
+[visualizer]
+font_name        = "BIZ-UDMinchoM.ttc"
+draw_boundingbox = True
+expanding_ratio  = 1.0
+scaling_on_nonpreprocessing = 3
+
+</pre>
+
+<img src = "./test/1000_jp_test.png" width = "1280" height="auto"><br><br>
+<img src = "./test_preprocessed/preprocessed_scaling_3_contrast_1.5_sharpness_3_1000_jp_test.png" width = "1280" height="auto"><br><br>
+
+<img src = "./test/1001_jp_test.png" width = "1280" height="auto"><br><br>
+<img src = "./test_preprocessed/preprocessed_scaling_3_contrast_1.5_sharpness_3_1001_jp_test.png" width = "1280" height="auto"><br><br>
+
+<img src = "./test/1002_jp_test.png" width = "1280" height="auto"><br><br>
+<img src = "./test_preprocessed/preprocessed_scaling_3_contrast_1.5_sharpness_3_1002_jp_test.png" width = "1280" height="auto"><br><br>
+
+<img src = "./test/1003_jp_test.png" width = "1280" height="auto"><br><br>
+<img src = "./test_preprocessed/preprocessed_scaling_3_contrast_1.5_sharpness_3_1003_jp_test.png" width = "1280" height="auto"><br><br>
+
+<img src = "./test/1004_jp_test.png" width = "1280" height="auto"><br><br>
+<img src = "./test_preprocessed/preprocessed_scaling_3_contrast_1.5_sharpness_3_1004_jp_test.png" width = "1280" height="auto"><br><br>
+
+<img src = "./test/1005_jp_test.png" width = "1280" height="auto"><br><br>
+<img src = "./test_preprocessed/preprocessed_scaling_3_contrast_1.5_sharpness_3_1005_jp_test.png" width = "1280" height="auto"><br><br>
+
+<img src = "./test/1006_jp_test.png" width = "1280" height="auto"><br><br>
+<img src = "./test_preprocessed/preprocessed_scaling_3_contrast_1.5_sharpness_3_1006_jp_test.png" width = "1280" height="auto"><br><br>
+
+<img src = "./test/1007_jp_test.png" width = "1280" height="auto"><br><br>
+<img src = "./test_preprocessed/preprocessed_scaling_3_contrast_1.5_sharpness_3_1007_jp_test.png" width = "1280" height="auto"><br><br>
+
+<img src = "./test/1008_jp_test.png" width = "1280" height="auto"><br><br>
+<img src = "./test_preprocessed/preprocessed_scaling_3_contrast_1.5_sharpness_3_1008_jp_test.png" width = "1280" height="auto"><br><br>
+
+<img src = "./test/1009_jp_test.png" width = "1280" height="auto"><br><br>
+<img src = "./test_preprocessed/preprocessed_scaling_3_contrast_1.5_sharpness_3_1009_jp_test.png" width = "1280" height="auto"><br><br>
+
+<img src = "./test/1010_jp_test.png" width = "1280" height="auto"><br><br>
+<img src = "./test_preprocessed/preprocessed_scaling_3_contrast_1.5_sharpness_3_1010_jp_test.png" width = "1280" height="auto"><br><br>
+
+<img src = "./test/1011_jp_test.png" width = "1280" height="auto"><br><br>
+<img src = "./test_preprocessed/preprocessed_scaling_3_contrast_1.5_sharpness_3_1011_jp_test.png" width = "1280" height="auto"><br><br>
+
+<img src = "./test/1012_jp_test.png" width = "1280" height="auto"><br><br>
+<img src = "./test_preprocessed/preprocessed_scaling_3_contrast_1.5_sharpness_3_1012_jp_test.png" width = "1280" height="auto"><br><br>
+
