@@ -179,7 +179,6 @@ Text Box Recognition:<br>
 </h2>
 Let's try to recognize Japanese Character Set.<br>
 See <a href= "./ひらがなカタカナ数字記号常用漢字.txt">ひらがなカタカナ数字記号常用漢字.txt"</a>.<br>
-</a>.<br>
 
 <pre>
 > python CloudVisionTextBoxRecognizer.py test_recognition.conf
